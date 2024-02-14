@@ -12,7 +12,7 @@ const LayoutDefault = () => {
       <Layout>
         <HeaderDefault />
         <HomeCarousel />
-        <Content className="content">
+        <Content>
           <Outlet />
         </Content>
         <FooterDefault />

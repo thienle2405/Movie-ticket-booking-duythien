@@ -1,47 +1,35 @@
 import LayoutDefault from "../views/client/layout/Layoutdefault";
+import Contact from "../views/client/pages/Contact/Contact";
+import Home from "../views/client/pages/Home/Home";
+import Login from "../views/client/pages/Login/Login";
+import News from "../views/client/pages/News/News";
+import Register from "../views/client/pages/Register/Register";
 
 export const routes = [
   {
     path: "/",
     element: <LayoutDefault />,
     children: [
-      // {
-      //   path: "/",
-      //   element: <Home />,
-      // },
-      // {
-      //   path: "login",
-      //   element: <Login />,
-      // },
-      // {
-      //   path: "register",
-      //   element: <Register />,
-      // },
-      // {
-      //   path: "logout",
-      //   element: <Logout />,
-      // },
-      // {
-      //   element: <PrivateRoutes />,
-      //   children: [
-      //     {
-      //       path: "answers",
-      //       element: <Answers />,
-      //     },
-      //     {
-      //       path: "quiz/:id",
-      //       element: <Quiz />,
-      //     },
-      //     {
-      //       path: "result/:id",
-      //       element: <Result />,
-      //     },
-      //     {
-      //       path: "topic",
-      //       element: <Topic />,
-      //     },
-      //   ],
-      // },
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/news",
+        element: <News />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
     ],
   },
 ];
