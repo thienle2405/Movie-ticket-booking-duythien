@@ -1,7 +1,11 @@
-const Home = (props) => {
+import Film from "./Film/Film";
+import HomeMenu from "./HomeMenu/HomeMenu";
+
+const Home = () => {
   return (
     <>
-      <div>Đây là home page</div>
+      <Film />
+      <HomeMenu/>
     </>
   )
 };
